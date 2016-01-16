@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="serviceApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular Services</title>
+    <script src="/vendor/angular/angular.min.js"></script>
+    <script src="/assets/scripts/client.min.js"></script>
+</head>
+<body ng-controller="mainController">
+    <div>Cohort Name: {{theta.name}}</div>
+    <div>Number of Students: {{theta.numberStudents}}</div>
+    <div>Spirit Animal: {{theta.spiritAnimal}}</div>
+    <div>Cohort Motto: {{theta.cohortMotto}}</div>
+    <div>Student Names: {{theta.getStudents}}</div>
+    <div>School: {{theta.school}}</div>
+    <div>Location: {{theta.location.city}}, {{theta.location.state}}</div>
+    <div>Country: {{theta.country}}</div>
+    <div>Coding Language: {{theta.language()}}</div>
+</body>
+</html>
